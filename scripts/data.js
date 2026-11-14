@@ -1,0 +1,422 @@
+// Données initiales réalistes pour FasoLogis (Burkina Faso) - Inspiré du standard Airbnb
+window.INITIAL_PROPERTIES = [
+  {
+    id: "BF-101",
+    title: "Magnifique Villa F4 avec grand jardin et garage",
+    type: "villa",
+    category: "Villa individuelle",
+    city: "Ouagadougou",
+    neighborhood: "Ouaga 2000",
+    zone: "Zone résidentielle - Extension Sud",
+    price: 350000,
+    deposit: 3, // mois de caution
+    advance: 2, // mois d'avance
+    bedrooms: 3,
+    bathrooms: 3,
+    surface: 350,
+    featured: true,
+    verified: true,
+    guestFavorite: true,
+    rating: 4.98,
+    reviewsCount: 24,
+    status: "approved", // approved, pending, rejected
+    goudronDistance: "Sur voie bitumée (goudron)",
+    water: "onea_indiv", // onea_indiv, onea_shared, forage
+    waterDetail: "Compteur ONEA individuel + Forage d'appoint avec polytank 2000L",
+    electricity: "cashpower_indiv", // cashpower_indiv, cashpower_shared, standard
+    electricityDetail: "Compteur Cash Power SONABEL individuel 20A",
+    amenities: [
+      "Climatisation dans toutes les pièces",
+      "Chauffe-eau solaire",
+      "Garage couvert 2 véhicules",
+      "Cour pavée et jardin arboré",
+      "Guérite pour vigile",
+      "Clôture barbelée sécurisée",
+      "Brasseurs d'air"
+    ],
+    description: "Superbe villa standing située à Ouaga 2000 dans un secteur calme et très sécurisé. Comprend un grand salon lumineux avec salle à manger, 3 chambres autonomes avec placards, une cuisine moderne équipée, une dépendance pour le personnel et un forage garantissant l'eau 24h/24.",
+    images: [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=80"
+    ],
+    contactName: "Agence Faso Prestige",
+    contactRole: "Superhôte • Agence Agréée",
+    hostAvatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+    contactPhone: "+22670123456",
+    contactWhatsapp: "22670123456",
+    postedDate: "2026-11-10",
+    views: 142
+  },
+  {
+    id: "BF-102",
+    title: "Appartement 2 pièces moderne (Chambre-Salon)",
+    type: "appartement",
+    category: "Appartement en immeuble R+2",
+    city: "Ouagadougou",
+    neighborhood: "Saaba",
+    zone: "Vers Université Thomas Sankara",
+    price: 75000,
+    deposit: 2,
+    advance: 1,
+    bedrooms: 1,
+    bathrooms: 1,
+    surface: 60,
+    featured: true,
+    verified: true,
+    guestFavorite: true,
+    rating: 4.91,
+    reviewsCount: 15,
+    status: "approved",
+    goudronDistance: "À 100m du goudron",
+    water: "onea_indiv",
+    waterDetail: "Compteur ONEA individuel",
+    electricity: "cashpower_indiv",
+    electricityDetail: "Cash Power individuel",
+    amenities: [
+      "Brasseurs d'air installés",
+      "Balcon privatif",
+      "Parking motos sécurisé au RDC",
+      "Carrelage complet",
+      "Vigile de nuit"
+    ],
+    description: "Bel appartement chambre-salon carrelé au 1er étage d'un immeuble neuf à Saaba. Idéal pour jeune cadre ou couple. Salon aéré, chambre avec salle d'eau intégrée, cuisine interne et balcon. Quartier accessible.",
+    images: [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80"
+    ],
+    contactName: "M. Traoré",
+    contactRole: "Propriétaire vérifié",
+    hostAvatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+    contactPhone: "+22676001122",
+    contactWhatsapp: "22676001122",
+    postedDate: "2026-11-12",
+    views: 89
+  },
+  {
+    id: "BF-103",
+    title: "Maison basse 3 pièces avec cour unique",
+    type: "maison_basse",
+    category: "Maison basse cour unique",
+    city: "Ouagadougou",
+    neighborhood: "Somgandé",
+    zone: "Non loin de l'Hôpital Schiphra",
+    price: 130000,
+    deposit: 3,
+    advance: 1,
+    bedrooms: 2,
+    bathrooms: 2,
+    surface: 180,
+    featured: false,
+    verified: true,
+    guestFavorite: false,
+    rating: 4.85,
+    reviewsCount: 8,
+    status: "approved",
+    goudronDistance: "À 250m de la voie goudronnée",
+    water: "onea_indiv",
+    waterDetail: "Compteur ONEA individuel avec réserve d'eau",
+    electricity: "cashpower_indiv",
+    electricityDetail: "Cash Power individuel",
+    amenities: [
+      "Cour fermée avec portail métallique",
+      "Garage pour 1 voiture",
+      "Pré-installation split clim",
+      "WC externe pour visiteurs",
+      "Grilles anti-moustiques"
+    ],
+    description: "Maison basse cour unique propre et sécurisée à Somgandé. Comprend 1 grand salon, 2 chambres spacieuses, 2 douches intérieures et une cuisine. Cour entièrement clôturée, parfaite pour une vie de famille tranquille.",
+    images: [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+    ],
+    contactName: "Démarcheur Ousmane",
+    contactRole: "Démarcheur de confiance",
+    hostAvatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+    contactPhone: "+22678456789",
+    contactWhatsapp: "22678456789",
+    postedDate: "2026-11-11",
+    views: 64
+  },
+  {
+    id: "BF-104",
+    title: "Chambre-Salon propre en cour commune (Célibatorium)",
+    type: "celibatorium",
+    category: "Célibatorium moderne",
+    city: "Ouagadougou",
+    neighborhood: "Gounghin",
+    zone: "Secteur 9, proche marché de Gounghin",
+    price: 45000,
+    deposit: 2,
+    advance: 1,
+    bedrooms: 1,
+    bathrooms: 1,
+    surface: 35,
+    featured: false,
+    verified: true,
+    guestFavorite: false,
+    rating: 4.80,
+    reviewsCount: 19,
+    status: "approved",
+    goudronDistance: "À 50m du goudron",
+    water: "onea_shared",
+    waterDetail: "Robinet ONEA dans la cour avec sous-compteur",
+    electricity: "cashpower_indiv",
+    electricityDetail: "Sous-compteur Cash Power par logement",
+    amenities: [
+      "Douche et WC internes",
+      "Cour fermée la nuit",
+      "Emplacement moto sécurisé",
+      "Brasseur d'air au salon"
+    ],
+    description: "Entrée-couché moderne dans une cour fermée de 5 logements calmes à Gounghin. Douche interne, carrelé, bien aéré et très facile d'accès. Voisinage paisible et respectueux.",
+    images: [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80"
+    ],
+    contactName: "Bailleur M. Sawadogo",
+    contactRole: "Bailleur direct",
+    hostAvatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80",
+    contactPhone: "+22665234567",
+    contactWhatsapp: "22665234567",
+    postedDate: "2026-11-13",
+    views: 110
+  },
+  {
+    id: "BF-105",
+    title: "Grande Villa R+1 avec piscine et dépendance",
+    type: "villa",
+    category: "Villa duplex haut standing",
+    city: "Bobo-Dioulasso",
+    neighborhood: "Belle-Ville",
+    zone: "Zone résidentielle",
+    price: 400000,
+    deposit: 3,
+    advance: 2,
+    bedrooms: 4,
+    bathrooms: 4,
+    surface: 420,
+    featured: true,
+    verified: true,
+    guestFavorite: true,
+    rating: 5.0,
+    reviewsCount: 31,
+    status: "approved",
+    goudronDistance: "Sur goudron direct",
+    water: "forage",
+    waterDetail: "Forage à haut débit + ONEA disponible",
+    electricity: "cashpower_indiv",
+    electricityDetail: "Compteur Cash Power triphasé",
+    amenities: [
+      "Piscine privée",
+      "Groupe électrogène automatique",
+      "Garage pour 3 véhicules",
+      "Système de caméras et alarme",
+      "Dépendance pour gardien avec douche",
+      "Climatisation intégrale"
+    ],
+    description: "Splendide duplex à Bobo-Dioulasso, quartier Belle-Ville. Architecture moderne, finitions impeccables, suite parentale avec dressing et terrasse. Idéal pour diplomates, cadres de direction ou expatriés.",
+    images: [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    contactName: "Cabinet Immobilier Sya",
+    contactRole: "Superhôte • Cabinet Partenaire",
+    hostAvatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+    contactPhone: "+22670987654",
+    contactWhatsapp: "22670987654",
+    postedDate: "2026-11-09",
+    views: 195
+  },
+  {
+    id: "BF-106",
+    title: "Villa 3 pièces propre et clôturée",
+    type: "maison_basse",
+    category: "Villa économique",
+    city: "Koudougou",
+    neighborhood: "Secteur 3",
+    zone: "Près du Lycée Provincial",
+    price: 65000,
+    deposit: 2,
+    advance: 1,
+    bedrooms: 2,
+    bathrooms: 1,
+    surface: 150,
+    featured: false,
+    verified: true,
+    guestFavorite: false,
+    rating: 4.75,
+    reviewsCount: 6,
+    status: "approved",
+    goudronDistance: "À 200m du goudron",
+    water: "onea_indiv",
+    waterDetail: "Branchement ONEA direct",
+    electricity: "cashpower_indiv",
+    electricityDetail: "Cash Power individuel",
+    amenities: [
+      "Cour clôturée",
+      "Arbre d'ombrage (manguier)",
+      "Terrasse couverte",
+      "Possibilité de garer 2 voitures"
+    ],
+    description: "Logement spacieux et calme dans la cité du Cavalier Rouge (Koudougou). Grand salon, 2 chambres confortables, cuisine interne. Environnement très paisible et familial.",
+    images: [
+      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80"
+    ],
+    contactName: "M. Zongo",
+    contactRole: "Propriétaire",
+    hostAvatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80",
+    contactPhone: "+22671239874",
+    contactWhatsapp: "22671239874",
+    postedDate: "2026-11-08",
+    views: 45
+  },
+  {
+    id: "BF-107",
+    title: "Appartement standing 3 pièces (2 chambres salon)",
+    type: "appartement",
+    category: "Appartement moderne",
+    city: "Ouagadougou",
+    neighborhood: "Dassasgho",
+    zone: "Axe échangeur de l'Est",
+    price: 150000,
+    deposit: 3,
+    advance: 1,
+    bedrooms: 2,
+    bathrooms: 2,
+    surface: 95,
+    featured: false,
+    verified: false,
+    guestFavorite: false,
+    rating: 4.89,
+    reviewsCount: 11,
+    status: "pending",
+    goudronDistance: "Sur voie bitumée",
+    water: "onea_indiv",
+    waterDetail: "Compteur ONEA individuel",
+    electricity: "cashpower_indiv",
+    electricityDetail: "Cash Power individuel",
+    amenities: [
+      "Ascenseur dans l'immeuble",
+      "Climatisation salon et chambre principale",
+      "Parking sous-terrain",
+      "Caméras de surveillance",
+      "Service de nettoyage des parties communes"
+    ],
+    description: "Appartement de standing au 2ème étage avec vue dégagée. Deux chambres autonomes avec placards, salon avec baie vitrée, cuisine carrelée avec rangements hauts et bas.",
+    images: [
+      "https://images.unsplash.com/photo-1502005229762-ee1b2b8ab00f?auto=format&fit=crop&w=1200&q=80"
+    ],
+    contactName: "Démarcheur Karim Ouédraogo",
+    contactRole: "Démarcheur agréé",
+    hostAvatar: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=200&q=80",
+    contactPhone: "+22678009988",
+    contactWhatsapp: "22678009988",
+    paymentReference: "OM-BF-89342918",
+    paymentMethod: "Orange Money",
+    paymentAmount: 2500,
+    paymentStatus: "pending_review",
+    postedDate: "2026-11-13",
+    views: 12
+  }
+];
+
+// Villes et Quartiers supportés au Burkina Faso
+window.BURKINA_LOCATIONS = {
+  "Ouagadougou": [
+    "Tous les quartiers",
+    "Ouaga 2000",
+    "Saaba",
+    "Somgandé",
+    "Gounghin",
+    "Dassasgho",
+    "Koulouba",
+    "Cissin",
+    "Pissy",
+    "Tampouy",
+    "Zone 1",
+    "Patte d'Oie",
+    "Karpala",
+    "Wayalghin",
+    "Kalgondin"
+  ],
+  "Bobo-Dioulasso": [
+    "Tous les quartiers",
+    "Belle-Ville",
+    "Accart-Ville",
+    "Colma",
+    "Sarre",
+    "Koko",
+    "Bindougousso",
+    "Secteur 22",
+    "Kuinima"
+  ],
+  "Koudougou": [
+    "Tous les quartiers",
+    "Secteur 1",
+    "Secteur 2",
+    "Secteur 3",
+    "Secteur 4",
+    "Palogo"
+  ],
+  "Ouahigouya": [
+    "Tous les quartiers",
+    "Secteur 1",
+    "Secteur 2",
+    "Secteur 5"
+  ],
+  "Fada N'Gourma": [
+    "Tous les quartiers",
+    "Secteur 1",
+    "Secteur 3"
+  ]
+};
+
+// Forfaits de publication pour démarcheurs et propriétaires
+window.PRICING_PLANS = [
+  {
+    id: "plan-single",
+    name: "Annonce Unitaire",
+    price: 2500,
+    badge: "Idéal Particulier",
+    duration: "Visible 30 jours",
+    features: [
+      "1 Annonce vérifiée",
+      "Jusqu'à 6 photos HD",
+      "Bouton WhatsApp direct",
+      "Support téléphonique",
+      "Activation sous 2h"
+    ]
+  },
+  {
+    id: "plan-demarcheur",
+    name: "Pack Démarcheur",
+    price: 8000,
+    badge: "Le Plus Populaire",
+    duration: "Valable 45 jours",
+    popular: true,
+    features: [
+      "5 Annonces vérifiées",
+      "Jusqu'à 10 photos par bien",
+      "Mise en avant 'À la Une' (7 jours)",
+      "Boutons WhatsApp & Téléphone directs",
+      "Statistiques de vues et clics",
+      "Support prioritaire"
+    ]
+  },
+  {
+    id: "plan-agency",
+    name: "Pack Agence Pro",
+    price: 20000,
+    badge: "Agences & Cabinets",
+    duration: "Abonnement mensuel",
+    features: [
+      "15 Annonces vérifiées",
+      "Badge certifié 'Partenaire Agréé'",
+      "Mise en avant permanente en tête de liste",
+      "Galeries photos illimitées",
+      "Tableau de bord personnalisé",
+      "Assistance dédiée 7j/7"
+    ]
+  }
+];
